@@ -1,0 +1,279 @@
+ /* Globale Stile */
+ html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Schwarze Hintergrundfarbe */
+    color: #fff; /* Weiße Textfarbe */
+}
+
+header {
+    background-color: #000; /* Schwarze Hintergrundfarbe */
+    color: #fff; /* Weiße Textfarbe */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7); /* Transparente schwarze Hintergrundfarbe */
+    padding: 0; /* Entfernt das Padding */
+    height: 80px; /* Anpassen der Höhe nach Bedarf */
+    position: fixed; /* Fixiert die Navbar am oberen Rand */
+    top: 0; /* Setzt die Navbar an den oberen Rand */
+    left: 0; /* Setzt die Navbar an den linken Rand */
+    width: 100%; /* Macht die Navbar so breit wie der Bildschirm */
+    z-index: 1000; /* Stellt sicher, dass die Navbar über anderen Elementen liegt */
+    display: flex; /* Flexbox für die Navbar */
+    align-items: center; /* Zentriert den Inhalt vertikal */
+}
+
+.navbar-brand {
+    color: #fff; /* Weiße Textfarbe für das Logo */
+    font-size: 1.5rem; /* Schriftgröße des Logos */
+    padding: 0 20px; /* Abstand links und rechts vom Logo */
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff; /* Weiße Textfarbe für Links */
+    padding: 20px; /* Padding für die Links */
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #4682B4; /* Blaue Farbe für Links beim Hovern */
+}
+
+/* Stellt sicher, dass der Hauptinhalt nicht unter der fixierten Navbar verschwindet */
+body {
+    padding-top: 80px; /* Gleiche Höhe wie die Navbar */
+}
+
+/* Hauptinhalt */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+/* Formularstil */
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="number"] {
+    margin-bottom: 0.5rem;
+}
+
+/* Tabellenstil */
+th, td {
+    padding: 0.75rem;
+    border-bottom: 1px solid #333; /* Dunkler Rand für die Tabelle */
+    text-align: left;
+}
+
+.order-md-2 {
+    order: 2;
+}
+
+.order-md-1 {
+    order: 1;
+}
+
+#employees {
+    background-color: #000; /* Schwarzer Hintergrund */
+    color: #fff; /* Weiße Textfarbe */
+    padding: 50px 0; /* Abstand oben und unten */
+}
+
+#employees .container {
+    text-align: center; /* Zentriert den Text */
+}
+
+.employee {
+    font-size: 20px; /* Größere Schriftgröße */
+    margin-bottom: 20px; /* Abstand zwischen den Mitarbeitern */
+}
+
+.employee a {
+    color: #fff; /* Weiße Textfarbe für Links */
+    text-decoration: none; /* Keine Unterstreichung für Links */
+}
+
+.employee a:hover {
+    color: #4682B4; /* Blaue Farbe für Links beim Hovern */
+}
+
+/* Footer-Stile */
+footer {
+    background-color: #000; /* Schwarze Hintergrundfarbe */
+    color: #fff; /* Weiße Textfarbe */
+    text-align: center;
+    padding: 20px;
+}
+
+.footer .container p {
+    display: flex;
+    gap: 1rem; /* Abstand zwischen den Elementen */
+    flex-wrap: wrap;
+}
+
+.footer .container p span {
+    position: relative;
+}
+
+.footer .container p span::after {
+    content: '|';
+    margin-left: 1rem;
+    position: absolute;
+    right: -0.5rem;
+}
+
+.footer .container p span:last-child::after {
+    content: '';
+}
+
+#events .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.event-image {
+    max-width: 45%;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 15px; /* Ecken abrunden */
+}
+
+.event-image:hover {
+    transform: scale(1.1);
+}
+
+.event-image:first-of-type {
+    order: 2; /* Das erste Bild rechts */
+    margin-left: auto; /* Nach links schieben */
+}
+
+.event-image:last-of-type {
+    order: 1; /* Das zweite Bild links */
+    margin-right: auto; /* Nach rechts schieben */
+}
+
+
+
+
+.spacer-small {
+    margin-top: 20px; /* Small top margin */
+    margin-bottom: 20px; /* Small bottom margin */
+}
+
+.spacer-medium {
+    margin-top: 50px; /* Medium top margin */
+    margin-bottom: 50px; /* Medium bottom margin */
+}
+
+.spacer-large {
+    margin-top: 100px; /* Large top margin */
+    margin-bottom: 100px; /* Large bottom margin */
+}
+
+.spacer-big {
+    margin-top: 150px; /* Big top margin */
+    margin-bottom: 150px; /* Big bottom margin */
+}
+
+
+
+
+.footer {
+    background-color: #000; /* Schwarze Hintergrundfarbe */
+    color: #fff; /* Weiße Textfarbe */
+    padding: 20px;
+}
+
+.footer .col {
+    color: #fff; /* Weiße Textfarbe für die divs */
+    cursor: pointer; /* Zeigt an, dass die divs anklickbar sind */
+    margin-bottom: 10px; /* Add margin-bottom to create space */
+}
+
+.footer .col:hover,
+.footer .col:active {
+    color: #4682B4; /* Blaue Farbe für Links beim Hovern und Anklicken */
+}
+
+.footer a {
+    color: inherit; /* Erbt die Farbe vom Eltern-Element */
+    text-decoration: none; /* Entfernt die Unterstreichung der Links */
+}
+
+.social-icons {
+    margin-top: 40px; /* Add margin-top to create space */
+}
+
+.social-icons img {
+    width: 30px; /* Set the width of the icons */
+    margin-right: 10px; /* Add margin-right to separate the icons */
+}
+
+.hero {
+    background: black;
+    height: 400px;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    background-color: #4682B4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-bottom: -20px;
+}
+
+.hero button:hover {
+    background-color: #000000;
+}
+
+.hero h6 {
+    font-size: 1rem; /* Adjust the font size if needed */
+    margin-bottom: 100px;
+}
+
+
+
+/* AOS Customizations */
+[data-aos] {
+    transition-property: transform, opacity;
+    transition-duration: 0,8 s;
+    transition-timing-function: ease-out;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.rounded-image {
+    border-radius: 15px; /* Adjust the value to make the corners more or less rounded */
+}
